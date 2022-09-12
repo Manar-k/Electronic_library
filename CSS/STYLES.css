@@ -1,0 +1,273 @@
+body {
+    /*background-image: url("https://media.istockphoto.com/vectors/brown-wood-texture-background-vector-id1090359792?b=1&k=6&m=1090359792&s=612x612&w=0&h=JxwERGGl94uebFivZm4sHb9B0x_9p_0YuIHgk2bpiDI=");*/
+    background-attachment: fixed;
+    background-color: #f2debf;
+    padding: 50px;
+    font-family: 'Roboto Mono', monospace;
+    color: black;
+    }
+a{
+  color:gray;
+}
+a:hover{
+  color:green;
+}
+    
+#border_white{ /*white border for some p pragraph with around corner*/
+	text-align:left; 
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding:50px;
+  background: white;
+  border-collapse: 100px;
+}
+
+#lb1{ /* properties of label*/
+  line-height: 26px;
+  margin-bottom: 20px;
+  display: flex;
+  width: 400px; 
+}
+
+input { /* properties of textfield*/
+  height: 20px;
+  flex:0 0 100px;
+  margin-left:30px;  
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////tables///////////////////////////////////////////////////////////////////*/
+
+table{ /*table with around corner*/
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 8px;
+  background: white;
+  border-collapse: separate;
+  -moz-border-radius:8px;
+}
+.menu{
+	  width: 100%;
+  border: 1px solid gray;
+  border-radius: 8px;
+  background: white;
+  border-collapse: separate;
+  -moz-border-radius:8px;
+    padding: 8px;
+  text-align: left;
+}
+th,td{
+  padding: 8px;
+  text-align: left;
+}
+#bottom_border{/*bottom border for shopping cart page*/
+  border-bottom: 1px solid lightgray;
+}
+
+#td_th{/* left border*/
+  border-left: 1px solid lightgray;
+  padding: 10px;
+}
+/*///////////////////////////////////tables/////////////////////////////////////////*/
+
+
+/*////////////////////////////////////button////////////////////////////////////////*/
+#button{ /* button of login page */
+  background-color: white;
+  color:black;
+  border:2px solid black;
+  padding: 15px 20px 30px 20px;
+  font-size: 16px;
+  text-align: center;
+  margin: 4px 2px;
+}
+#button:hover{
+  background-color: lightgray;
+  color:white;
+  border:2px solid black;
+}
+
+#button_div{ /* button of shoping cart page  */
+  background-color: white;
+  color:black;
+  border:2px solid black;
+  padding: 15px 20px 30px 20px;
+  font-size: 16px;
+  text-align: center;
+  margin: 4px 2px;
+  float:right;
+  left:85%;
+  position:absolute; 
+}
+#button_div:hover{
+  background-color: lightgray;
+  color:white;
+  border:2px solid black;
+}
+
+
+#div_account{ /* button of Account page */
+  background-color: white;
+  color:black;
+  border:2px solid black;
+  padding: 15px 20px 30px 20px;
+  font-size: 16px;
+  text-align: center;
+  margin: 4px 2px;
+
+  float:right;
+  left:78%;
+  position:static; 
+}
+
+#div_account:hover{
+  background-color: lightgray;
+  color:white;
+  border:2px solid black;
+}
+/*////////////////////////////////////button////////////////////////////////////////*/
+
+
+/*////////////////////////////////////text align & table in center login page//////////////////////////////////*/
+#login{ 
+  text-align: center; 
+}
+
+#table_width{ width: 50px; 
+  margin-left:auto;
+  margin-right:auto; 
+  }
+  
+
+/*////////////////////////////////////text align & table in center login page//////////////////////////////////*/
+
+/*////////////////////////////////////home page//////////////////////////////////*/
+/*////////////////////////////////////home page//////////////////////////////////*/
+
+pre{
+	/*font-family:Arial Bold;
+	background-image:url("/Users/lokamloka/Desktop/html/Images/unnamed.jpg"); /*i have to write the hole path to appear
+	border-radius: 5px;*/
+}
+
+
+ body{
+   background-color:LightGray;
+   background-attachment: fixed;  
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+input[type=text] {
+  width: 50%;
+  padding: 15px 10px 15px 10px;
+  margin: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=text]:focus {
+  width: 50%;
+}
+
+input[type=submit] {
+  width: 20%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 10px 20px 10px;
+  margin: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+em {
+	font-size :30px;
+}
+.main_link:hover{
+color: gray;
+box-shadow:2px 2px 2px 2px;
+
+}
+strong{
+	font-size:15px;
+	font-family:"Times New Roman", Times, serif;
+}
+u{
+	color:tomato;
+}
+div{
+	
+	padding:0px 80px;
+}
+ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: white;
+	border-radius: 4px;
+
+  }
+dt {
+	background-color:white;
+    float: left;
+	border-radius: 4px;
+	font-family:Arial Bold;
+  }
+
+  dt a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  dt a:hover, .dropdown:hover .dropbtn {
+    background-color: gray;
+  }
+
+  dt.dropdown {
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {background-color: #fff;}
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+#border_pg{ /*white border for some p pragraph with around corner*/
+  padding:20px;
+  background: lightgray;
+}
+.hidee{ visibility:hidden}
+

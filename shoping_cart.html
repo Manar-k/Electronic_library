@@ -1,0 +1,54 @@
+	<!Doctype html>
+<html>
+	<head>
+		<title>Electric Library</title>
+		<link rel="stylesheet"href="CSS/STYLES.css" >
+	</head>
+
+	<body>
+		<div class="menu">
+			<table> <!-- table of icons-->
+			  <tr>
+				<th>
+			<a href="Electronic_library.html">
+						 <img  width="40" src="Images/home22.png"/> <!-- icon for home page with link to go to it-->
+					 </a>
+					 <a href="login.html">
+						 <img  width="40" src="Images/login-icon.png"/> <!-- icon for login page with link-->
+					 </a>
+					 <a href="shoping_cart.html">
+						 <img width="40" src="Images/cart-icon.png"/> <!-- icon for shopping cart page with link-->
+					</a>
+				</th>
+			  </tr>
+			</table>
+
+			  <h2>shopping cart</h2>
+			  <table> <!-- table of shopping cart details-->
+				  <tr>
+					   <th id="bottom_border">Book Name</th>
+					   <th id="bottom_border">Quantity</th>
+					   <th id="bottom_border">Price</th>
+					   <th id="bottom_border">Delete</th>
+				  </tr>
+				  <tr><!-- table of shopping cart details-->
+					  <td id="bottom_border">Empty</td>
+					  <td id="bottom_border">Empty</td>
+					  <td id="bottom_border">Empty</td>
+					  <td id="bottom_border"><img width="20" src="Images/delete-icon.png"/></td> <!-- delete icon for delete-->
+				  </tr><!-- table of shopping cart details-->
+				</table>
+
+				  <p id="border_white">Total Price: </p> <!-- to put total price-->
+
+			   <h3>Payment Method</h3> <!-- radio button for payment with buy button-->
+				  <P id="border_white"> <!-- radio button for payment with buy button-->
+					  <label><input type="radio" name="Payment Method"value="Visa" checked="checked"/>Visa </label>
+								  <label><input type="radio" name="Payment Method" value="Master Card" />Master Card</label>
+									  <label><input type="radio" name="Payment Method"value="Mada Card" />Mada Card</label>
+									   <label><input type="radio" name="Payment Method"value="Cash" />Cash</label>
+									   <input id="button_div" type="button" name="Buy" value="Buy" />
+				 </p>
+			</div>
+	</body>
+</html>

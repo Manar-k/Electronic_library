@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+
+.button {
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid black;}
+.button1:hover {
+  background-color: lightgray;
+  color: white;
+  border: 2px solid gray;}
+
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: gray;
+  }
+
+  li.dropdown {
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+
+  table, th, td {
+    border: 1px solid black;
+  }
+  .monospace {  font-family: "Lucida Console", Courier, monospace;}
+
+
+
+  rs {color: red;}
+  sa {  font-family: "Sofia";  font-size: 30px;}
+  center {text-align: center;}
+  
+#border_pg{ /*white border for some p pragraph with around corner*/
+  padding:100px;
+  background: lightgray;
+}
+.menu{
+	  width: 100%;
+  border: 1px solid gray;
+  border-radius: 8px;
+  background: white;
+  border-collapse: separate;
+  -moz-border-radius:8px;
+    padding: 8px;
+  text-align: left;
+}
+
+</style>
+<script>
+$books = 0;
+function addBook()
+{
+$books++;
+document.getElementById('booksNO').innerHTML = $books;
+alert('The book is added successfully');
+}
+</script>
+</head>
+                                        <body  BGCOLOR="lightgray"> 
+
+                                          <ul>
+                            
+                         <li class="dropdown"> <!-- to select the type of books --> 
+                             <a href="javascript:void(0)" class="dropbtn"> Classification of books</a>
+                             <div class="dropdown-content"> <!-- to select the type of books --> 
+                             <a href="#Technical and computer"> Technical and computer </a> <!-- to select the type of books --> 
+                             <a href="#Story and novel"> Story and novel </a> <!-- to select the type of books --> 
+                             <a href="#Self fly">  Self fly  </a> <!-- to select the type of books --> 
+                             <a href="#Books in foreign languages">   Books in foreign languages </a> <!-- to select the type of books --> 
+                             <a href="#Islamic and religious"> Islamic and religious </a> <!-- to select the type of books --> 
+                                        </div>
+                                        </li>
+<div class="menu">
+ <!--of icons-->
+			 
+			<a href="Electronic_library.html">
+						 <img  width="40" src="Images/home22.png"/> <!-- icon for home page with link to go to it-->
+					 </a>
+					 <a href="login.html">
+						 <img  width="40" src="Images/login-icon.png"/> <!-- icon for login page with link-->
+					 </a>
+					 <a href="shoping_cart.html">
+						 <img src="Images/cart.png"  width="30" height="30" >
+				<label id="booksNO" style="color:red">0</label> <!-- icon for shopping cart page with link-->
+					</a>
+			<div>
+
+                        </ul>
+
+                                          <br>
+                                          <br>
+                                          <br>
+                    <div align="center"><ul>
+                    <h4 align="center"><sa id="Technical and computer">   Technical and computer   </sa></h4> <br> <br><br> <br> 
+
+            <table>                         <!-- firt tyoe of books  Technical and computer --> 
+                              <tr>
+
+                    <td><center><img src="Images/python.jpg"  width="170" height="200" ></center>  <!-- to add the book to shoping cart showing name and price --> 
+                                <br/>
+                         <p class="monospace"><center> Python</center></p><!-- to add the book to shoping cart showing name and price --> 
+                         <br/>
+                         <rs><center>75 rs</center></rs><!-- to add the book to shoping cart showing name and price --> 
+                         <br/>
+                         <center> <button class="button button1" onclick="addBook()">add </button></center><!-- to add the book to shoping cart showing name and price --> 
+
+
+          <td><center><img src="Images/c1.png"  width="170" height="200" ></center><br/><!-- to add the book to shoping cart showing name and price --> 
+          <p class="monospace"><center>Brilliant Dreamweaver CS5</p></center><br/><!-- to add the book to shoping cart showing name and price --> 
+          <center>   <rs>63.20 rs</center></rs><br/>
+          <center>      <button class="button button1" onclick="addBook()">add</button></center><!-- to add the book to shoping cart showing name and price --> 
+
+          <td><center><img src="Images/c2.png"  width="170" height="200" ></center><br/><!-- to add the book to shoping cart showing name and price --> 
+          <p class="monospace"><center>Ivor Horton's Beginning Java<br/>‎7‎th Edition‎</p></center><br/><!-- to add the book to shoping cart showing name and price --> 
+          <rs><center>217.35 rs</rs></center><br/>
+          <center>      <button class="button button1" onclick="addBook()">add</button></center><!-- to add the book to shoping cart showing name and price --> 
+
+                                              </tr>
+                                              <tr>
+          <td><center><img src="Images/c3.png"  width="170" height="200" ></center><br/><!-- to add the book to shoping cart showing name and price --> 
+          <p class="monospace"><center>nteraction Design,‎4‎th Edition</p></center><br/>
+          <rs>‎<center> 272.72 rs</rs></center><br/>
+          <center><button class="button button1" onclick="addBook()"><center>add</button></center><!-- to add the book to shoping cart showing name and price --> 
+
+
+          <td><center><img src="Images/c4.png"  width="170" height="200" ></center><br/><!-- to add the book to shoping cart showing name and price --> 
+          <p class="monospace"><center>Computer Organisation <br/>and Architecture: An Introduction,<br/> ‎2‎nd Edition‎‎</p></center><br/>
+          <rs><center>      113.85 rs</rs></center><br/>
+          <center>     <button class="button button1" onclick="addBook()">add</button></center><!-- to add the book to shoping cart showing name and price --> 
+
+          <td><center><img src="Images/c5.png"  width="170" height="200" ></center><br/><!-- to add the book to shoping cart showing name and price --> 
+          <p class="monospace"><center>            Programming in C & C++, <br/>Revised Edition‎</p></center><br/>
+          <rs><center>32 rs</rs></center><br/>
+          <center>  <button class="button button1" onclick="addBook()">add</button></center><!-- to add the book to shoping cart showing name and price --> 
+
+                    </tr>
+                 </table>
+                     <br>
+                   </div>
+                     <br>
+                    </ul>
+                     <br>
+                     <br>
+                     <ul>
+
+            <h4 align="center"><sa id="Books in foreign languages"> Books in foreign languages  </sa></h4> <br/> <br/><br/> <br/>
+                  <div align="center">   <!-- this for Books in foreign languages type of book --> 
+                            <table>
+                                    <tr>
+          <td><center><img src="Images/e1.png"  width="170" height="200" ></center><br/><!-- to add the book to shoping cart showing name and price --> 
+          <p class="monospace"><center>   ‎Learn English in ‎30‎ Days‎</center></p><br/>
+          <rs><center>21 rs</center></rs><br/>
+          <center>      <button class="button button1"onclick="addBook()">add </button></center>
+
+          <td><center><img src="Images/e2.png"  width="170" height="200" ></center><br/><!-- to add the book to shoping cart showing name and price --> 
+          <p class="monospace"><center>  Let's Play English‎</p></center><br/>
+          <center>   <rs>32 rs</center></rs><br/>
+          <center>      <button class="button button1"onclick="addBook()">add</button></center>
+
+          <td><center><img src="Images/e3.png"  width="170" height="200" ></center><br/><!-- to add the book to shoping cart showing name and price --> 
+          <p class="monospace"><center> ‎Making Sense of English‎</p></center><br/>
+          <rs><center>53.35 rs</rs></center><br/>
+          <center>      <button class="button button1"onclick="addBook()">add</button></center><!-- to add the book to shoping cart showing name and price --> 
+
+                                                </tr>
+                                                <tr>
+          <td><center><img src="Images/e4.png"  width="170" height="200" ></center><br/>
+          <p class="monospace"><center>‎15‎‎-‎Minute Arabic‎</p></center><br/><!-- to add the book to shoping cart showing name and price --> 
+          <rs>‎<center> 55 rs</rs></center><br/>
+          <center><button class="button button1"onclick="addBook()"><center>add</button></center>
+
+
+          <td><center><img src="Images/e5.png"  width="170" height="200" ></center><br/><!-- to add the book to shoping cart showing name and price --> 
+          <p class="monospace"><center> Correct Your French Blunders, ‎2‎nd Edition‎‎‎</p></center><br/>
+          <rs><center>      43 rs</rs></center><br/>
+          <center>     <button class="button button1"onclick="addBook()">add</button></center><!-- to add the book to shoping cart showing name and price --> 
+
+          <td><center><img src="Images/e6.png"  width="170" height="200" ></center><br/>
+          <p class="monospace"><center> Dictionary of basic grammar of<br/> the Japanese language    </p></center><br/><!-- to add the book to shoping cart showing name and price --> 
+          <rs><center>69 rs</rs></center><br/>
+          <center>  <button class="button button1"onclick="addBook()">add</button></center>
+
+                      </tr>
+                   </table>
+                       <br>
+                     </div>
+                       <br>
+                      </ul>
+                       <br>
+                       <br>
+                       <ul>
+
+                <div align="center">
+          <h4 align="center"><sa id="Story and novel"> Story and novel  </sa></h4> <br/> <br/><br/> <br/>
+                            <table>
+                                    <tr><!-- this for Story and novel type of book --> 
+
+
+           <td><center><img src="Images/s1-n.png"  width="170" height="200" ></center><br/>
+           <p class="monospace"><center> ‎Lincoln Conspiracy‎      </center></p><br/><!-- to add the book to shoping cart showing name and price --> 
+           <rs><center>99 rs</center></rs><br/>
+           <center>      <button class="button button1" onclick="addBook()">add </button></center>
+
+           <td><center><img src="Images/s2.png"  width="170" height="200" ></center><br/>
+           <p class="monospace"><center> Three Cups of Tea‎</p></center><br/> <!-- to add the book to shoping cart showing name and price --> 
+           <center>   <rs>35 rs</center></rs><br/>
+           <center>      <button class="button button1"onclick="addBook()">add</button></center>
+
+           <td><center><img src="Images/s3.png"  width="170" height="200" ></center><br/>
+           <p class="monospace"><center>‎Love in a Torn Land‎</p></center><br/> <!-- to add the book to shoping cart showing name and price --> 
+           <rs><center>35 rs</rs></center><br/>
+           <center>      <button class="button button1" onclick="addBook()">add</button></center>
+
+                                                                                    </tr>
+                                                                                    <tr>
+           <td><center><img src="Images/s5.png"  width="170" height="200" ></center><br/>
+           <p class="monospace"><center> 13‎ Hours (MTI)‎</center><br/> <!-- to add the book to shoping cart showing name and price --> 
+           <rs>‎<center> 43 rs</rs></center><br/>
+           <center><button class="button button1"onclick="addBook()"><center>add</button></center>
+
+
+           <td><center><img src="Images/s4-n.png"  width="170" height="200" ></center><br/>
+           <p class="monospace"><center> ‎Finding Chika‎</p></center><br/> <!-- to add the book to shoping cart showing name and price --> 
+           <rs><center>     49 rs</rs></center><br/>
+           <center>     <button class="button button1" onclick="addBook()">add</button></center>
+
+           <td><center><img src="Images/s6.png"  width="170" height="200" ></center><br/>
+           <p class="monospace"><center>     Mornings in Jenin‎</p></center><br/> <!-- to add the book to shoping cart showing name and price --> 
+           <rs><center>50 rs</rs></center><br/>
+           <center>  <button class="button button1" onclick="addBook()">add</button></center>
+
+
+                 </tr>
+              </table>
+                  <br>
+                </div>
+                  <br>
+                 </ul>
+                  <br>
+                  <br>
+                  <ul>
+
+                </div>
+
+           <ul><div align="center">
+           <h4 align="center"><sa id="Self fly">Self fly  </sa></h4> <br/> <br/><br/> <br/>
+
+                            <table><!-- this for  Self fly  type of book --> 
+                              <tr>
+           <td><center><img src="Images/t1.png"  width="170" height="200" ></center><br/>
+           <p class="monospace"><center> ‎The Power of Now‎‎      </center></p><br/><!-- to add the book to shoping cart showing name and price --> 
+           <rs><center>72 rs</center></rs><br/>
+           <center>      <button class="button button1"onclick="addBook()">add </button></center>
+
+           <td><center><img src="Images/t2-n.png"  width="170" height="200" ></center><br/>
+           <p class="monospace"><center> In The Evening‎‎</p></center><br/><!-- to add the book to shoping cart showing name and price --> 
+           <center>   <rs>79 rs</center></rs><br/>
+           <center>      <button class="button button1"onclick="addBook()">add</button></center>
+           <td><center><img src="Images/t3-n.png"  width="170" height="200" ></center><br/>
+           <p class="monospace"><center>‎To a Healthier You‎‎</p></center><br/><!-- to add the book to shoping cart showing name and price --> 
+           <rs><center>79 rs</rs></center><br/>
+           <center>      <button class="button button1"onclick="addBook()">add</button></center>
+
+                                                </tr>
+                                                <tr>
+           <td><center><img src="Images/t4-n.png"  width="170" height="200" ></center><br/>
+           <p class="monospace"><center> To a Mindful You‎‎</center><br/><!-- to add the book to shoping cart showing name and price --> 
+           <rs>‎<center> 79 rs</rs></center><br/>
+           <center><button class="button button1"onclick="addBook()"><center>add</button></center>
+
+
+            <td><center><img src="Images/t5.png"  width="170" height="200" ></center><br/>
+            <p class="monospace"><center> The Question Book‎</p></center><br/><!-- to add the book to shoping cart showing name and price --> 
+            <rs><center>     79 rs</rs></center><br/>
+            <center>     <button class="button button1"onclick="addBook()">add</button></center>
+
+            <td><center><img src="Images/t6.png"  width="170" height="200" ></center><br/>
+            <p class="monospace"><center>     ‎Happy‎‎</p></center><br/><!-- to add the book to shoping cart showing name and price --> 
+            <rs><center>61 rs</rs></center><br/>
+            <center>  <button class="button button1"onclick="addBook()">add</button></center>
+                  </tr>
+               </table>
+                   <br>
+                 </div>
+                   <br>
+                  </ul>
+                   <br>
+                   <br>
+                    <br> </div> <p id="border_pg"></p>
+<ul>
+                     <div align="center">        <!-- this for Islamic and religious type of book --> 
+                     <h4 align="center"><sa id="Islamic and religious">Islamic and religious  </sa></h4> <br/> <br/><br/> <br/>
+              
+
+             <table>
+                     <tr>
+                       <td><center><img src="Images/i1-n.png"  width="170" height="200" ></center><br/>
+                       <p class="monospace"><center>   ‎‎Daily Wisdom‎‎</center></p><br/><!-- to add the book to shoping cart showing name and price --> 
+                      <rs><center>89 rs</center></rs><br/>
+                      <center>      <button class="button button1"onclick="addBook()">add </button></center>
+
+                      <td><center><img src="Images/i2-n.png"  width="170" height="200" ></center><br/>
+                      <p class="monospace"><center>  Sayings of The Prophet Muhammad‎‎</p></center><br/><!-- to add the book to shoping cart showing name and price --> 
+                      <center>   <rs>89 rs</center></rs><br/>
+                      <center>      <button class="button button1"onclick="addBook()">add</button></center>
+
+                      <td><center><img src="Images/i3.png"  width="170" height="200" ></center><br/>
+                      <p class="monospace"><center>The Noble Quran‎</p></center><br/><!-- to add the book to shoping cart showing name and price --> 
+                      <rs><center>89rs</rs></center><br/>
+                      <center>      <button class="button button1"onclick="addBook()">add</button></center>
+
+                                 </tr>
+                                 <tr>
+                     <td><center><img src="Images/i4.png"  width="170" height="200" ></center><br/>
+                     <p class="monospace"><center>‎Fortification of the Muslim Through Rememberance<br/> and Supplication From the Qur'aan and the Sunnah‎‎</p></center><br/><!-- to add the book to shoping cart showing name and price --> 
+                     <rs>‎<center>3.45 rs</rs></center><br/>
+                     <center><button class="button button1"onclick="addBook()"><center>add</button></center>
+
+
+                     <td><center><img src="Images/i5.png"  width="170" height="200" ></center><br/>
+                     <p class="monospace"><center> Ali Ibn Abi Talib‎</p></center><br/><!-- to add the book to shoping cart showing name and price --> 
+                     <rs><center>   15 rs</rs></center><br/>
+                     <center>     <button class="button button1"onclick="addBook()">add</button></center>
+
+                     <td><center><img src="Images/i6.png"  width="170" height="200" ></center><br/>
+                     <p class="monospace"><center> Daily Dua (English‎-‎Arabic)‎</p></center><br/><!-- to add the book to shoping cart showing name and price --> 
+                     <rs><center>5 rs</rs></center><br/>
+                     <center>  <button class="button button1"onclick="addBook()">add</button></center>
+
+
+                  </tr><!-- to add the book to shoping cart showing name and price --> 
+             </table>
+                 </ul>
+
+
+
+
+</body>
+</html>

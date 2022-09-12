@@ -1,0 +1,98 @@
+<!Doctype html>
+<html>
+	<head>
+		 <title>Electric Library</title>
+		 <link rel="stylesheet" href="CSS/STYLES.css" >
+		 <script language="JavaScript">
+		 
+	function validateEmail(email) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+	function checkvalidation()
+{
+	$check = true;
+//	$Email = document.getElementById('Email').value;
+	$password = document.getElementById('Pass').value;
+       $email = document.getElementById('email').value;
+	   if(validateEmail($email))
+{
+	document.getElementById('emailError').classList.add("hidee");
+	document.getElementById('email').style.background= "white";
+}else{
+$check = false;
+	document.getElementById('emailError').classList.remove("hidee");
+	document.getElementById('email').style.background= "yellow";
+}
+
+if($password !== '')
+{
+	document.getElementById('passwordError').classList.add("hidee");
+	document.getElementById('Pass').style.background= "white";
+}else{
+$check = false;
+	document.getElementById('passwordError').classList.remove("hidee");
+	document.getElementById('Pass').style.background= "yellow";
+}
+if ($password.length > 7 ){
+  //$check = true;
+        }else{
+          alert(" password  must contains at least 8 digits, please re-enter");
+   $check = false;
+}
+
+if($check){
+window.location.href = "afterLogin.html";
+
+}
+
+}
+		 </script>
+	</head>
+
+	<body>
+	<div class="menu">
+    <table> <!-- table of icons-->
+      <tr>
+        <th>
+		<a href="Electronic_library.html">
+                 <img  width="40" src="Images/home22.png"/> <!-- icon for home page with link to go to it-->
+             </a>
+             <a href="login.html">
+                 <img  width="40" src="Images/login-icon.png"/> <!-- icon for login page with link-->
+             </a>
+             <a href="shoping_cart.html">
+                 <img width="40" src="Images/cart-icon.png"/> <!-- icon for shopping cart page with link-->
+            </a>
+        </th>
+      </tr>
+    </table>
+
+		<h2 id="login">Log in</h2> <!--login page-->
+		<p id="login">New Customer? Start Here <!-- if you are new costmer go to account page-->
+	                <a id="ac" href="account.html">Create a new account</a></p>
+		<table id="table_width">
+			<tr>
+				<td> <label id="lb1"> Email </label><input type="email" name="email" id="email" /> 
+					<label class="hidee" id="emailError" style="color:red">Fill Email please</label> <!-- enter email--></td>
+
+				<td id="td_th">&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td><label id="lb1"> Password </label><input type="password" name="Password" id="Pass" /> 
+					<label class="hidee" id="passwordError" style="color:red">Fill password please</label>
+				</td>
+				<td id="td_th"><input id="button" type="button" onclick="checkvalidation()" name="Enter" value="Enter" />
+				  				</td>
+			</tr>
+			<tr>
+				<td>
+				<input id="rememberMe" value="lsRememberMe" checked type="checkbox">
+				<label>remaind me</label>
+				</td>
+			</tr>
+		</table><br><br>
+		</div>
+	</body>
+</html>

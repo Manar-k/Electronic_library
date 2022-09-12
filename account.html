@@ -1,0 +1,246 @@
+<?xml version ="1.0" encoding="utf-8"?>
+<!Doctype html>
+<html>
+	<head>
+		<title>Electric Library</title>
+		<link rel="stylesheet" href="CSS/STYLES.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <!--link for speacial font-->
+    <script language="JavaScript">
+      function validateEmail(email) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+function checkvalidation()
+{
+  $check = true;
+//  $Email = document.getElementById('Email').value;
+  $password = document.getElementById('Pass').value;
+  $password2 = document.getElementById('Pass2').value;//comfirmw pass
+  $email = document.getElementById('email').value;
+  $phone = document.getElementById('phone').value;
+  $fname = document.getElementById('fname').value;
+  $fname2 = document.getElementById('fname2').value;//District
+  $Country = document.getElementById('Country').value;
+  $City = document.getElementById('City').value;
+  $District = document.getElementById('District').value;
+  $Box = document.getElementById('Box').value;
+
+
+if(validateEmail($email))
+{
+  document.getElementById('emailError').classList.add("hidee");
+  document.getElementById('email').style.background= "white";
+}else{
+$check = false;
+  document.getElementById('emailError').classList.remove("hidee");
+  document.getElementById('email').style.background= "yellow";
+}
+
+if($password !== '')
+{
+  document.getElementById('passwordError').classList.add("hidee");
+  document.getElementById('Pass').style.background= "white";
+}else{
+$check = false;
+  document.getElementById('passwordError').classList.remove("hidee");
+  document.getElementById('Pass').style.background= "yellow";
+}
+
+if($password2 !== '')
+{
+  document.getElementById('passwordError2').classList.add("hidee");
+  document.getElementById('Pass2').style.background= "white";
+}else{
+$check = false;
+  document.getElementById('passwordError2').classList.remove("hidee");
+  document.getElementById('Pass2').style.background= "yellow";
+}
+
+if($phone !== '')
+{
+  document.getElementById('phoneError').classList.add("hidee");
+  document.getElementById('phone').style.background= "white";
+}else{
+$check = false;
+  document.getElementById('phoneError').classList.remove("hidee");
+  document.getElementById('phone').style.background= "yellow";
+}
+
+if($fname !== '')
+{
+  document.getElementById('nameError').classList.add("hidee");
+  document.getElementById('fname').style.background= "white";
+}else{
+$check = false;
+  document.getElementById('nameError').classList.remove("hidee");
+  document.getElementById('fname').style.background= "yellow";
+}
+
+if($fname2 !== '')
+{
+  document.getElementById('nameError2').classList.add("hidee");
+  document.getElementById('fname2').style.background= "white";
+}else{
+$check = false;
+  document.getElementById('nameError2').classList.remove("hidee");
+  document.getElementById('fname2').style.background= "yellow";
+}
+
+if($Country !== '')
+{
+  document.getElementById('CountryError').classList.add("hidee");
+  document.getElementById('Country').style.background= "white";
+}else{
+$check = false;
+  document.getElementById('CountryError').classList.remove("hidee");
+  document.getElementById('Country').style.background= "yellow";
+}//Country
+
+if($City !== '')
+{
+  document.getElementById('CityError').classList.add("hidee");
+  document.getElementById('City').style.background= "white";
+}else{
+$check = false;
+  document.getElementById('CityError').classList.remove("hidee");
+  document.getElementById('City').style.background= "yellow";
+}//District
+
+if($District !== '')
+{
+  document.getElementById('DistrictError').classList.add("hidee");
+  document.getElementById('District').style.background= "white";
+}else{
+$check = false;
+  document.getElementById('DistrictError').classList.remove("hidee");
+  document.getElementById('District').style.background= "yellow";
+}//District
+
+if($Box !== '')
+{
+  document.getElementById('BoxError').classList.add("hidee");
+  document.getElementById('Box').style.background= "white";
+}else{
+$check = false;
+  document.getElementById('BoxError').classList.remove("hidee");
+  document.getElementById('Box').style.background= "yellow";
+}
+
+if ($password.length > 7 ){
+  //$check = true;
+        }else{
+          alert(" password  must contains at least 8 digits, please re-enter");
+   $check = false;
+}
+if ($password2.length > 7 ){
+  //$check = true;
+        }else{
+          alert("confirm password  must contains at least 8 digits, please re-enter");
+   $check = false;
+}
+if ($phone.length > 9 ){
+  //$check = true;
+        }else{
+          alert("Phone Number  must contains 10 digits, please re-enter");
+   $check = false;
+}
+
+if($check){
+window.location.href = "afterLogin.html";
+
+}
+
+}
+
+       </script>
+	</head>
+	<body>
+	<div class="menu">
+    <table> <!-- table of icons-->
+      <tr>
+        <th>
+		<a href="Electronic_library.html">
+                 <img  width="40" src="Images/home22.png"/> <!-- icon for home page with link to go to it-->
+             </a>
+             <a href="login.html">
+                 <img  width="40" src="Images/login-icon.png"/> <!-- icon for login page with link-->
+             </a>
+             <a href="shoping_cart.html">
+                 <img width="40" src="Images/cart-icon.png"/> <!-- icon for shopping cart page with link-->
+            </a>
+        </th>
+      </tr>
+    </table>
+
+
+
+		<h2>Create a new account</h2> <!-- create account page-->
+		<p>If you have an account with us, please log in to the <a id="ac" href="login.html">
+    login page</a>.</p> <!-- to go to log in page-->
+		
+      <!-- table with labels & input of all personal info & address-->
+      <table>
+        <tr>
+          <th><h3>Personal information</h3></th>
+          <th><h3>Address</h3></th>
+        </tr>
+        <tr><!--  with labels & input name & address-->
+          <td> <label id="lb1"> First Name</label> <input type="text" name="First Name" id="fname"/> </label>
+            <label class="hidee" id="nameError" style="color:red">Fill First Name please </label>
+           </td>
+          <td id="td_th"> <label id="lb1"> Country</label><input type="text" name="Country"  id="Country"/></label>
+            <label class="hidee" id="CountryError" style="color:red">Fill Country Name please </label>
+           </td>
+        </tr>
+
+        <tr><!--  with labels & input of last name-->
+          <td> <label id="lb1"> Last Name</label><input type="text" name="Last Name" id="fname2"/>
+            <label class="hidee" id="nameError2" style="color:red">Fill Last Name please </label>
+            </td>
+          <td id="td_th">  <label id="lb1">City</label><input type="text" name="City" id="City"/>
+            <label class="hidee" id="CityError" style="color:red">Fill City Name please </label>
+           </td>
+        </tr>
+
+        <tr><!--  with labels & enail-->
+          <td> <label id="lb1"> Email</label><input type="email" name="email" id="email"/>
+            <label class="hidee" id="emailError" style="color:red">Fill Email please</label>
+            </td>
+          <td id="td_th"> <label id="lb1"> District</label><input type="text" name="District" id="District"/> 
+            <label class="hidee" id="DistrictError" style="color:red">Fill District please</label>
+           </td>
+        </tr>
+
+        <tr><!--  with labels phone number-->
+          <td> <label id="lb1"> Phone Number</label><input type="numbers" name="Phone Number" id="phone"/>  
+            <label class="hidee" id="phoneError" style="color:red">Fill Phone Number please </label>
+          </td>
+          <td id="td_th"> <label id="lb1"> Mail Box</label><input type="text" name="Mail Box" id="Box"/> 
+            <label class="hidee" id="BoxError" style="color:red">Fill MailBox Number please</label>
+           </td>
+        </tr>
+
+        <tr><!-- table with labels & mailing-->
+          <td> <label id="lb1"> Password </label><input type="password" name="Password" id="Pass"/> 
+            <label class="hidee" id="passwordError" style="color:red">Fill password please</label>
+           </td>
+          <td id="td_th"> <h3>Mailing List</h3> </td>
+        </tr>
+
+        <tr><!-- labels & password-->
+          <td> <label id="lb1"> Comfirm Password </label><input type="password" name="Comfirm Password" id="Pass2"/>
+              <label class="hidee" id="passwordError2" style="color:red">Fill password please again</label>
+            </td>
+          <td id="td_th"> Subscribe
+              <label><input type="radio" name="Mailing List" value="Yes"checked="checked"/>Yes</label>
+                <label><input type="radio" name="Mailing List" value="No"/>No</label>
+                <input id="div_account" type="button" onclick="checkvalidation()" name="Create Account" value="Create Account"/>
+          </td>
+        </tr>
+      </table>
+                    
+   
+		 </div>
+	</body>
+</html>
